@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --container: rgba(255,255,255,.1)
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.bg-container {
+  background-color: var(--container);
+}
+
+h1 {
+  font-size: 1.75rem;
+}
